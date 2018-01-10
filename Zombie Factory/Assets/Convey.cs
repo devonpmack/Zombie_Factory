@@ -20,4 +20,10 @@ public class Convey : MonoBehaviour {
     {
         transform.Rotate(new Vector3(0,0,-90));
     }
+	void OnTriggerStay2D(Collider2D coll) {
+		if (coll.gameObject.tag == "Item") {
+			Debug.Log ("c");
+			coll.gameObject.transform.Translate (transform.up * 1 * Time.deltaTime);
+		}
+	}
 }
