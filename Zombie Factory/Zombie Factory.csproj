@@ -222,6 +222,7 @@
     <Compile Include="Assets\CameraDrag.cs" />
     <Compile Include="Assets\Controller.cs" />
     <Compile Include="Assets\Convey.cs" />
+    <Compile Include="Assets\draggable.cs" />
     <Compile Include="Assets\Item.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
