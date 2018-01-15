@@ -1,9 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Convey.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CameraDrag2.cs">
     <Files>
-      <File FileName="Assets\Item.cs" Line="14" Column="3" />
-      <File FileName="Assets\Convey.cs" Line="30" Column="1" />
+      <File FileName="Assets\Scripts\Item.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Spawner.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CameraDrag.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PinchZoom.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\draggable.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CameraDrag2.cs" Line="6" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
