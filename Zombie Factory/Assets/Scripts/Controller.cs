@@ -8,14 +8,6 @@ public class Controller : MonoBehaviour {
     public GameObject mb;
     public bool MenuOpen = true;
     // Use this for initialization
-    void Start () {
-
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
     public void SetMenuStatus(bool open)
     {
         MenuOpen = open;
