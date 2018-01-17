@@ -34,7 +34,11 @@ public class CameraDrag2 : MonoBehaviour {
         RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, Mathf.Infinity);
         if (hit)
         {
-            return true;
+            if (hit.transform.gameObject.tag == "Block")
+            {
+                return true;
+            }
+            
         }
         return false;
     }

@@ -9,7 +9,8 @@ public class draggable : MonoBehaviour {
     private Vector3 offset;
     private Vector3 original;
 	private SpriteRenderer sprite;
-
+    public float price = 1f;
+    public ShopScrollList scr;
 	void Start() {
 		Vector2 currentPos = transform.position;
 		transform.position = new Vector2(Mathf.Round(currentPos.x),
@@ -30,6 +31,12 @@ public class draggable : MonoBehaviour {
 		{
 			transform.Rotate(new Vector3(0, 0, -90));
 		}
+        if (Camera.main.gameObject.GetComponent<Controller>().mode == 3)
+        {
+            scr.brains += price;
+            scr.RefreshBrains();
+            Destroy(gameObject);
+        }
     }
     void OnMouseDrag()
     {
@@ -52,11 +59,19 @@ public class draggable : MonoBehaviour {
             {
                 if (block != this.gameObject && block.transform.position == transform.position)
                 {
+                    // fail
                     transform.position = original;
                     break;
                 }
             }
-			Time.timeScale = 1;
+            if (!Camera.main.gameObject.GetComponent<Controller>().onMap(currentPos))
+            {
+                transform.position = original;
+            }
+            if (!Camera.main.gameObject.GetComponent<Controller>().paused)
+            {
+                Time.timeScale = 1;
+            }
         }
     }
 }

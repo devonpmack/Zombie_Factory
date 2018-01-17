@@ -18,6 +18,6 @@ public class Spawner : MonoBehaviour {
 		GameObject s = Instantiate (essence);
 		Invoke ("Spawn", 4);
 		s.transform.position = transform.position;
-		s.transform.Translate (transform.up*0.5f);
+		//s.transform.Translate (transform.up*0.5f);
 	}
 }

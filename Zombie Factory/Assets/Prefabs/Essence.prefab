@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52e562f867c8d584ab512dd39b5c4f2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemID: essence
   mover: {fileID: 0}
 --- !u!212 &212865010796635610
 SpriteRenderer:

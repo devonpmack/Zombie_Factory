@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
+    public string itemID = "default";
     public GameObject mover;
     // Use this for initialization
     void Start()
     {
-
+        Invoke("despawn", 30);
     }
 
-
-    // Update is called once per frame
+    void despawn()
+    {
+        Destroy(gameObject);
+    }
 }
