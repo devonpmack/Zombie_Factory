@@ -61,7 +61,7 @@ public class ConfirmPurchase : MonoBehaviour {
                              Mathf.Round(currentPos.y));
         foreach (GameObject block in GameObject.FindGameObjectsWithTag("Block"))
         {
-            if (block != this.gameObject && block.transform.position == transform.position)
+            if ((Vector2)block.transform.position == currentPos)
             {
                 return false;
             }

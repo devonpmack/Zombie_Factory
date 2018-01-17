@@ -63,12 +63,19 @@ public class Controller : MonoBehaviour {
 
     public bool onMap(Vector2 position)
     {
-        if (position.x > BoundsX[0] && position.x < BoundsX[1] && position.y > BoundsY[0] && position.y < BoundsY[1])
+        if (position.x > BoundsX[0] && position.x < BoundsX[1] && position.y > BoundsY[0] && position.y < BoundsY[1] && !IsPointerOverUIObject())
         {
             return true;
         }
 
         return false;
     }
-
+    private bool IsPointerOverUIObject()
+    {
+        PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
+        eventDataCurrentPosition.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+        List<RaycastResult> results = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
+        return results.Count > 0;
+    }
 }
