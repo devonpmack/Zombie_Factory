@@ -5,6 +5,8 @@ using UnityEngine;
 public class Item : MonoBehaviour
 {
     public string itemID = "default";
+	public int quality = 1;
+	[System.NonSerialized]
     public GameObject mover;
     // Use this for initialization
     void Start()
