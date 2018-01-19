@@ -509,6 +509,7 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -552,6 +553,10 @@ MonoBehaviour:
   rb: {fileID: 308179113}
   mb: {fileID: 197499225}
   xb: {fileID: 1432837850}
+<<<<<<< HEAD
+=======
+  scrList: {fileID: 1718447487}
+>>>>>>> 119239b376d4f331d53c4052b68ca9295b439302
   paused: 0
   MenuOpen: 0
 --- !u!1 &197499225
@@ -2232,7 +2237,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 20
+  m_Text: X
 --- !u!222 &1281546714
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2912,7 +2917,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000014093, y: -0.00001013279}
+  m_AnchoredPosition: {x: -0.000014093, y: 0.000023512528}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1718447485
@@ -2969,15 +2974,35 @@ MonoBehaviour:
   itemList:
   - itemName: Conveyor
     icon: {fileID: 21300000, guid: 785d0a6aaaceb4a4dac8fa1464d83969, type: 3}
-    price: 2
+    price: 5
     prefab: {fileID: 1181384617430292, guid: 9b59ce154cef5cf4aaa0a18eb2fcbd56, type: 2}
-  - itemName: Essence Maker
+  - itemName: Essence Generator
     icon: {fileID: 21300000, guid: 0a29b0687535dc14e8a433fa4c625e42, type: 3}
-    price: 24
+    price: 25
+    prefab: {fileID: 1715713862390286, guid: 503ac787889f4ce4282bdc0c78991c43, type: 2}
+  - itemName: Zombie Combiner
+    icon: {fileID: 21300000, guid: 0a29b0687535dc14e8a433fa4c625e42, type: 3}
+    price: 40
+    prefab: {fileID: 1471497955389312, guid: 50055a65e31bb3e4a96de7457e0b31e7, type: 2}
+  - itemName: Torso Maker
+    icon: {fileID: 21300000, guid: 0a29b0687535dc14e8a433fa4c625e42, type: 3}
+    price: 30
+    prefab: {fileID: 1715713862390286, guid: 503ac787889f4ce4282bdc0c78991c43, type: 2}
+  - itemName: Leg Maker
+    icon: {fileID: 21300000, guid: 0a29b0687535dc14e8a433fa4c625e42, type: 3}
+    price: 30
+    prefab: {fileID: 1029693879242634, guid: ba18b3ee807183447b71be701364f20f, type: 2}
+  - itemName: Arm Maker
+    icon: {fileID: 21300000, guid: 0a29b0687535dc14e8a433fa4c625e42, type: 3}
+    price: 100
+    prefab: {fileID: 1715713862390286, guid: 503ac787889f4ce4282bdc0c78991c43, type: 2}
+  - itemName: Head Maker
+    icon: {fileID: 21300000, guid: 0a29b0687535dc14e8a433fa4c625e42, type: 3}
+    price: 100
     prefab: {fileID: 1715713862390286, guid: 503ac787889f4ce4282bdc0c78991c43, type: 2}
   brainDisplay: {fileID: 1125240404}
   brainDisplay2: {fileID: 1281546713}
-  brains: 30
+  brains: 200
   toPlace: {fileID: 971810575}
   controller: {fileID: 183221425}
 --- !u!1 &1988777933
