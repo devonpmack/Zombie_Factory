@@ -9,9 +9,14 @@ public class Controller : MonoBehaviour {
     public GameObject rb;
     public GameObject mb;
     public GameObject xb;
+    public ShopScrollList scrList;
     public bool paused = false;
     public bool MenuOpen = false;
     // Use this for initialization
+    void Start() {
+        scrList.RefreshBrains();
+    }
+
     public void SetMenuStatus(bool open)
     {
         MenuOpen = open;

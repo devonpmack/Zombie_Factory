@@ -553,6 +553,7 @@ MonoBehaviour:
   rb: {fileID: 308179113}
   mb: {fileID: 197499225}
   xb: {fileID: 1432837850}
+  scrList: {fileID: 1718447487}
   paused: 0
   MenuOpen: 0
 --- !u!1 &197499225
@@ -2913,7 +2914,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000014093, y: -0.00001013279}
+  m_AnchoredPosition: {x: -0.000014093, y: 0.000023512528}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1718447485
