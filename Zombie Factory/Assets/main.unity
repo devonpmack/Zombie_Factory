@@ -552,6 +552,7 @@ MonoBehaviour:
   rb: {fileID: 308179113}
   mb: {fileID: 197499225}
   xb: {fileID: 1432837850}
+  paused: 0
   MenuOpen: 0
 --- !u!1 &197499225
 GameObject:
