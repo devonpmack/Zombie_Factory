@@ -147,7 +147,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -131.7, y: 140.9}
+  m_AnchoredPosition: {x: -131.70001, y: 140.9}
   m_SizeDelta: {x: 67.8, y: 67.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &44804447
@@ -509,7 +509,6 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -553,10 +552,7 @@ MonoBehaviour:
   rb: {fileID: 308179113}
   mb: {fileID: 197499225}
   xb: {fileID: 1432837850}
-<<<<<<< HEAD
-=======
   scrList: {fileID: 1718447487}
->>>>>>> 119239b376d4f331d53c4052b68ca9295b439302
   paused: 0
   MenuOpen: 0
 --- !u!1 &197499225
@@ -1502,7 +1498,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -49.149994, y: 140.89998}
+  m_AnchoredPosition: {x: -49.149994, y: 140.89996}
   m_SizeDelta: {x: 67.8, y: 67.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &773064050
@@ -2973,36 +2969,29 @@ MonoBehaviour:
   confirmer: {fileID: 44804445}
   itemList:
   - itemName: Conveyor
-    icon: {fileID: 21300000, guid: 785d0a6aaaceb4a4dac8fa1464d83969, type: 3}
     price: 5
     prefab: {fileID: 1181384617430292, guid: 9b59ce154cef5cf4aaa0a18eb2fcbd56, type: 2}
   - itemName: Essence Generator
-    icon: {fileID: 21300000, guid: 0a29b0687535dc14e8a433fa4c625e42, type: 3}
     price: 25
     prefab: {fileID: 1715713862390286, guid: 503ac787889f4ce4282bdc0c78991c43, type: 2}
   - itemName: Zombie Combiner
-    icon: {fileID: 21300000, guid: 0a29b0687535dc14e8a433fa4c625e42, type: 3}
-    price: 40
+    price: 100
     prefab: {fileID: 1471497955389312, guid: 50055a65e31bb3e4a96de7457e0b31e7, type: 2}
   - itemName: Torso Maker
-    icon: {fileID: 21300000, guid: 0a29b0687535dc14e8a433fa4c625e42, type: 3}
-    price: 30
-    prefab: {fileID: 1715713862390286, guid: 503ac787889f4ce4282bdc0c78991c43, type: 2}
+    price: 50
+    prefab: {fileID: 1175172613993682, guid: 3c6445a6ba7bedc499b797c4f1b66b9d, type: 2}
   - itemName: Leg Maker
-    icon: {fileID: 21300000, guid: 0a29b0687535dc14e8a433fa4c625e42, type: 3}
-    price: 30
+    price: 50
     prefab: {fileID: 1029693879242634, guid: ba18b3ee807183447b71be701364f20f, type: 2}
   - itemName: Arm Maker
-    icon: {fileID: 21300000, guid: 0a29b0687535dc14e8a433fa4c625e42, type: 3}
-    price: 100
-    prefab: {fileID: 1715713862390286, guid: 503ac787889f4ce4282bdc0c78991c43, type: 2}
+    price: 50
+    prefab: {fileID: 1029693879242634, guid: eb74cde614d0ac2479cd457e2bf32451, type: 2}
   - itemName: Head Maker
-    icon: {fileID: 21300000, guid: 0a29b0687535dc14e8a433fa4c625e42, type: 3}
-    price: 100
-    prefab: {fileID: 1715713862390286, guid: 503ac787889f4ce4282bdc0c78991c43, type: 2}
+    price: 50
+    prefab: {fileID: 1029693879242634, guid: a8f6b8b7771df83489491da82adfe1b9, type: 2}
   brainDisplay: {fileID: 1125240404}
   brainDisplay2: {fileID: 1281546713}
-  brains: 200
+  brains: 1000
   toPlace: {fileID: 971810575}
   controller: {fileID: 183221425}
 --- !u!1 &1988777933

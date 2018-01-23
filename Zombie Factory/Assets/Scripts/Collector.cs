@@ -10,11 +10,12 @@ public class Collector : MonoBehaviour {
         if (coll.gameObject.tag == "Item")
         {
             Item s = coll.gameObject.GetComponent<Item>();
-            if (s.itemID == "essence")
+            if (s.itemID == "zombie")
             {
-                Debug.Log("+1 Brains");
+                ZomStats stats = s.gameObject.GetComponent<Zombie>().stats;
+                Debug.Log("Got Zombie");
                 Destroy(coll.gameObject);
-                scrList.brains += 1;
+                scrList.brains += stats.GetSTR() + stats.GetSPD() + stats.GetHP() + stats.GetINT();
                 scrList.RefreshBrains();
             }
 

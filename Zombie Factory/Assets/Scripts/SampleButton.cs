@@ -25,6 +25,7 @@ public class SampleButton : MonoBehaviour {
         item = currentItem;
         nameLabel.text = item.itemName;
         priceLabel.text = item.price.ToString();
+        item.icon = item.prefab.GetComponent<SpriteRenderer>().sprite;
         iconImage.sprite = item.icon;
         itemPrefab = item.prefab;
 

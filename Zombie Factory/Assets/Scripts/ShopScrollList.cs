@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class ShopElement
 {
     public string itemName;
+    [System.NonSerialized]
     public Sprite icon;
     public float price = 1f;
     public GameObject prefab;
